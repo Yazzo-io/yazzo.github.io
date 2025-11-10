@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function HeroSlideshow() {
   const slides = [
-    "Yazzo — Smart Tools for Teams",
-    "We build collaboration and analytics tools that help teams ship faster",
-    "Transform how your team collaborates and delivers results",
-    "Streamline workflows with intelligent automation and real-time insights",
-    "Launching Feb 26 — Mark your calendar",
+    "Discover local events and dining in real-time — right on your map",
+    "Turn empty seats into opportunities with instant offers",
+    "Real-time deals for spontaneous experiences near you",
+    "Fill venues, reduce waste, support local culture",
+    "Launching February 26, 2026 in Helsinki",
   ];
 
   const [index, setIndex] = useState(0);
@@ -21,7 +22,7 @@ export default function HeroSlideshow() {
   }, [slides.length]); // Rotate through slides
 
   return (
-    <section className="relative isolate overflow-hidden min-h-screen flex items-center justify-center">
+    <section className="relative isolate overflow-hidden min-h-screen flex flex-col items-center justify-center">
       <div className="mx-auto max-w-5xl px-6">
         <div className="relative h-40">
           {slides.map((text, i) => (
@@ -38,6 +39,18 @@ export default function HeroSlideshow() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Logo with glow effect */}
+      <div className="mt-16 relative">
+        <div className="absolute inset-0 blur-3xl opacity-50 bg-yazzo-500 rounded-full"></div>
+        <Image
+          src="/logoRoundedCorners.png"
+          alt="Yazzo Logo"
+          width={200}
+          height={200}
+          className="relative z-10"
+        />
       </div>
     </section>
   );

@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yazzo — Smart Tools for Teams",
-  description: "We build collaboration and analytics tools that help teams ship faster. Launching Feb 26.",
+  title: "Yazzo — Discover Events & Dining in the Moment",
+  description: "Real-time offers for local events and restaurants. Turn empty seats into opportunities. Launching February 26, 2026 in Helsinki.",
 };
 
 export default function RootLayout({
