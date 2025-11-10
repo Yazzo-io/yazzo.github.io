@@ -27,7 +27,7 @@ export default function Footer() {
               href="mailto:info@yazzo.io"
               className="hover:text-yazzo-400 transition-colors"
             >
-              info@yazzo.io
+              info(at)yazzo.io
             </Link>
           </div>
         </div>
