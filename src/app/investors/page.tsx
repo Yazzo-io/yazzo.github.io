@@ -39,6 +39,7 @@ export default function Investors() {
           {/* PDF Viewer */}
           <div className="relative w-full aspect-[16/9] bg-white rounded-lg overflow-hidden mb-6">
             <iframe
+              key={currentPage}
               src={`/Yazzo_pitch_deck_with_logo.pdf#page=${currentPage}&view=FitH`}
               className="w-full h-full"
               title={`Pitch Deck - Page ${currentPage}`}
