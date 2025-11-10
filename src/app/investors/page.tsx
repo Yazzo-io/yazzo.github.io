@@ -1,24 +1,6 @@
-"use client";
-
-import { useState } from "react";
 import FloatingNav from "../../components/FloatingNav";
 
 export default function Investors() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 20; // Update this based on your actual PDF page count
-
-  const handlePrevious = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  const handleNext = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-background-primary">
       <FloatingNav />
@@ -34,43 +16,18 @@ export default function Investors() {
           </p>
         </div>
 
-        {/* PDF Slideshow */}
+        {/* PDF Viewer */}
         <div className="relative bg-black/20 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-8">
-          {/* PDF Viewer */}
           <div className="relative w-full aspect-[16/9] bg-white rounded-lg overflow-hidden mb-6">
             <iframe
-              key={currentPage}
-              src={`/Yazzo_pitch_deck_with_logo.pdf#page=${currentPage}&view=FitH`}
+              src="/Yazzo_pitch_deck_with_logo.pdf"
               className="w-full h-full"
-              title={`Pitch Deck - Page ${currentPage}`}
+              title="Pitch Deck"
             />
           </div>
 
-          {/* Navigation Controls */}
-          <div className="flex items-center justify-between gap-4">
-            <button
-              onClick={handlePrevious}
-              disabled={currentPage === 1}
-              className="px-4 py-2 bg-yazzo-500 hover:bg-yazzo-600 disabled:bg-gray-600 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-colors"
-            >
-              Previous
-            </button>
-
-            <div className="text-white font-medium">
-              Page {currentPage} of {totalPages}
-            </div>
-
-            <button
-              onClick={handleNext}
-              disabled={currentPage === totalPages}
-              className="px-4 py-2 bg-yazzo-500 hover:bg-yazzo-600 disabled:bg-gray-600 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-colors"
-            >
-              Next
-            </button>
-          </div>
-
           {/* Download Link */}
-          <div className="mt-6 text-center">
+          <div className="text-center">
             <a
               href="/Yazzo_pitch_deck_with_logo.pdf"
               download
