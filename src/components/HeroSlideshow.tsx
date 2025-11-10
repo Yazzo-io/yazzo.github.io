@@ -33,7 +33,7 @@ export default function HeroSlideshow() {
       setIndex((i) => (i + 1) % slides.length);
     }, 5000);
     return () => clearInterval(id);
-  }, [slides.length]);
+  }, [slides.length]); // Rotate through slides
 
   return (
     <section className="relative isolate overflow-hidden">
