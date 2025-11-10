@@ -20,7 +20,7 @@ export default function Investors() {
         <div className="relative bg-black/20 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-8">
           <div className="relative w-full aspect-[16/9] bg-white rounded-lg overflow-hidden mb-6">
             <iframe
-              src="/Yazzo_pitch_deck_with_logo.pdf"
+              src="/Yazzo_pitch_deck_with_logo.pdf?v=2"
               className="w-full h-full"
               title="Pitch Deck"
             />
@@ -29,7 +29,7 @@ export default function Investors() {
           {/* Download Link */}
           <div className="text-center">
             <a
-              href="/Yazzo_pitch_deck_with_logo.pdf"
+              href="/Yazzo_pitch_deck_with_logo.pdf?v=2"
               download
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-lg font-semibold transition-colors"
             >
