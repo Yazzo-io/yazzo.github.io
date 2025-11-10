@@ -39,7 +39,7 @@ export default function Investors() {
           {/* PDF Viewer */}
           <div className="relative w-full aspect-[16/9] bg-white rounded-lg overflow-hidden mb-6">
             <iframe
-              src={`/Yazzo_SLUSH_PitchDeck.pdf#page=${currentPage}&view=FitH`}
+              src={`/Yazzo_pitch_deck_with_logo.pdf#page=${currentPage}&view=FitH`}
               className="w-full h-full"
               title={`Pitch Deck - Page ${currentPage}`}
             />
@@ -71,7 +71,7 @@ export default function Investors() {
           {/* Download Link */}
           <div className="mt-6 text-center">
             <a
-              href="/Yazzo_SLUSH_PitchDeck.pdf"
+              href="/Yazzo_pitch_deck_with_logo.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-lg font-semibold transition-colors"
             >
