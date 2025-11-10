@@ -33,8 +33,7 @@ export default function FloatingNav() {
             Team
           </Link>
           <Link
-            href="/Yazzo_SLUSH_PitchDeck.pdf"
-            target="_blank"
+            href="/investors"
             className="bg-yazzo-500 hover:bg-yazzo-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-colors shadow-yazzo"
           >
             For Investors
