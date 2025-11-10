@@ -7,31 +7,31 @@ export default function HeroSlideshow() {
   const slides = [
     {
       text: "Discover local events and dining in real-time — right on your map",
-      textClass: "top-16 left-1/2 -translate-x-1/2 md:top-[15%] md:left-[8%] md:translate-x-0",
+      textClass: "top-24 left-1/2 -translate-x-1/2 md:top-[15%] md:left-[8%] md:translate-x-0",
       logoClass: "bottom-20 left-1/2 -translate-x-1/2 md:bottom-[20%] md:right-[12%] md:left-auto md:translate-x-0",
       logoSrc: "/logo1noBG.png",
     },
     {
       text: "Turn empty seats into opportunities with instant offers",
-      textClass: "top-16 left-1/2 -translate-x-1/2 md:top-[35%] md:right-[10%] md:left-auto md:translate-x-0",
+      textClass: "top-24 left-1/2 -translate-x-1/2 md:top-[35%] md:right-[10%] md:left-auto md:translate-x-0",
       logoClass: "bottom-16 left-1/2 -translate-x-1/2 md:top-[40%] md:bottom-auto md:left-[15%] md:translate-x-0",
       logoSrc: "/logo2noBG.png",
     },
     {
       text: "Real-time deals for spontaneous experiences near you",
-      textClass: "top-16 left-1/2 -translate-x-1/2 md:bottom-[25%] md:top-auto md:left-[10%] md:translate-x-0",
+      textClass: "top-24 left-1/2 -translate-x-1/2 md:bottom-[25%] md:top-auto md:left-[10%] md:translate-x-0",
       logoClass: "bottom-20 left-1/2 -translate-x-1/2 md:top-[18%] md:bottom-auto md:right-[18%] md:left-auto md:translate-x-0",
       logoSrc: "/logo1noBG.png",
     },
     {
       text: "Fill venues, support local culture",
-      textClass: "top-20 left-1/2 -translate-x-1/2 md:top-[20%] md:right-[12%] md:left-auto md:translate-x-0",
+      textClass: "top-28 left-1/2 -translate-x-1/2 md:top-[20%] md:right-[12%] md:left-auto md:translate-x-0",
       logoClass: "bottom-16 left-1/2 -translate-x-1/2 md:bottom-[15%] md:left-[20%] md:translate-x-0",
       logoSrc: "/logo2noBG.png",
     },
     {
       text: "Launching February 26, 2026 in Helsinki",
-      textClass: "top-1/3 left-1/2 -translate-x-1/2 md:top-[30%]",
+      textClass: "top-[35%] left-1/2 -translate-x-1/2 md:top-[30%]",
       logoClass: "bottom-1/3 left-1/2 -translate-x-1/2 md:bottom-[12%]",
       logoSrc: "/logo1noBG.png",
     },
