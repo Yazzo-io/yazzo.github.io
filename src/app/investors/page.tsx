@@ -1,4 +1,5 @@
 import FloatingNav from "../../components/FloatingNav";
+import Footer from "../../components/Footer";
 
 export default function Investors() {
   return (
@@ -41,6 +42,7 @@ export default function Investors() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

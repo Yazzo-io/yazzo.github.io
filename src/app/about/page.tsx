@@ -1,4 +1,5 @@
 import FloatingNav from "../../components/FloatingNav";
+import Footer from "../../components/Footer";
 
 export default function About() {
   return (
@@ -87,6 +88,7 @@ export default function About() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

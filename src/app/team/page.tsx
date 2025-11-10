@@ -1,4 +1,5 @@
 import FloatingNav from "../../components/FloatingNav";
+import Footer from "../../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -87,6 +88,7 @@ export default function Team() {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
