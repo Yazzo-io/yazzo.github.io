@@ -1,0 +1,274 @@
+Yazzo – MVP Plan (Minimum Viable Product)
+Yazzo and Yazzo Partner are services provided by Yazzo.io Oy.
+
+1. Objective & Problem Description​
+The goal of the Yazzo service is to help event organizers – such as cultural operators and
+restaurants – reach customers in real-time, particularly when the event or product is not yet
+fully booked. The service enables quick promotion of discounts or visibility precisely at the
+moments when participants are most needed.
+The problem Yazzo addresses:​
+Events and occasions often remain under-attended because their marketing is based on
+pre-planned strategies. If ticket sales stall, organizers have no easy way to respond quickly.
+Similarly, restaurants may have empty tables or surplus food but lack a channel to attract
+customers quickly.
+Current alternatives are either too slow (social media, newsletters) or rely on paid ads,
+which don’t always convert effectively. They also do not work based on location.
+Yazzo offers a solution where real-time discounts and offers are shown on a map to users,
+who can immediately make a reservation. This brings value to both businesses and
+consumers – especially helping small event organizers to gain visibility and sales without
+heavy systems.
+
+2. Vision​
+In three years, Yazzo aims to be the leading platform for promoting new experiences and
+local services – especially for cultural, event, and restaurant operators. We want to provide a
+platform where real-time visibility and agile campaigning are accessible to every organizer,
+whether it's a small theatre, a concert, or a dinner. Yazzo transforms the way people
+discover experiences – and the way experiences find their audiences.
+
+3. Sustainability​
+Yazzo not only improves event visibility and occupancy – it also supports sustainable
+development and increases cultural accessibility. The service ensures that existing resources
+(such as empty event seats) are fully utilized rather than going unused.
+Yazzo promotes the following sustainability goals:
+●​ Optimized consumption: Event venues, staff, and production are already in place –
+Yazzo enables their more efficient use without additional resource strain.
+●​ Improved cultural accessibility: Discounts and real-time offers can make cultural
+experiences accessible to those who may not afford full-priced tickets.
+
+●​ Support for small entrepreneurs: Small theatres, performers, and restaurants gain
+visibility without large marketing budgets – and can respond flexibly to demand
+changes.
+●​ Strengthening local identity: The app works based on location, guiding consumers
+to use services in their area and boosting urban cultural vibrancy.​
+
+With Yazzo, sustainability is not an add-on – it's built into the core logic of the service: to do
+more with less and better utilize existing capacity.
+Data Security and GDPR Compliance​
+The technical implementation of the Yazzo service is based on the Firebase platform, which
+provides high-level security and modern user data management solutions. User data such as
+reservations, profile information, and location-based functions are securely stored in
+Firestore, and user authentication is handled via Firebase Authentication.
+The service is designed and implemented in accordance with the EU’s General Data
+Protection Regulation (GDPR):
+●​ Only data essential for functionality is collected
+●​ All personal data is securely stored and minimized technically
+●​ Users have the right to view, edit, and delete their information
+Data protection and user trust are a fundamental part of the Yazzo user experience – from
+the very beginning.
+
+4. Service Overview and Technical Implementation
+Service​
+Yazzo is a mobile-based platform that allows cultural event organizers to offer real-time
+discounts and quickly fill unoccupied seats. Through the service, an event producer can
+publish a discount – for example “–50% for tonight’s concert” – which is displayed on the
+app’s map view to users. Consumers can reserve the discount directly through the app.
+When booking, a small commission is charged from the user, who then receives a personal
+discount code and related QR code. This code is used for redemption at the event venue. The
+organizer can choose to validate the code manually or scan it via the Yazzo Partner app. If
+QR code scanning is not used, the organizer can manually check the code from the Yazzo
+Partner app’s reservation list. Both methods mark the reservation as used in the Yazzo
+system.
+The service combines dynamic pricing, campaign code management, and map-based
+visibility to facilitate event filling and improve access to culture for consumers.
+
+Initially, Yazzo focuses on the needs of the culture and event sectors, but the platform is
+designed to be scalable. Later, it will expand to the restaurant industry and other
+location-based services with unused capacity. In this way, Yazzo becomes a general visibility
+and occupancy tool for local experience and service providers.
+Yazzo provides a simple, effective, and scalable way to reduce empty seats, track discount
+usage, and improve event accessibility – especially for small and medium-sized operators.
+Technical Implementation​
+Yazzo will be implemented as two separate mobile applications that share the same
+backend system:
+●​ Yazzo app for end-users (customers)
+●​ Yazzo Partner app for managing events and offers (service providers)
+Both apps are built using React Native technology and will run on both iOS and Android
+platforms, providing a fast, responsive, and user-friendly native experience.
+The core of both apps is the map view, which displays real-time event and service discounts
+based on the user’s location. The map interface is implemented using Mapbox, offering a
+visually clear and easily customizable environment for location-based content.
+Backend Architecture (MVP Phase - SLUSH Ready):
+●​ Node.js/Express API server deployed on Railway
+●​ MySQL database for data persistence
+●​ Mock data system for rapid development and demo purposes
+●​ Authentication system with multiple options:
+  - Google Sign-In (OAuth) via @react-native-google-signin
+  - Mock email/password authentication for MVP
+  - Future: Firebase Authentication migration post-SLUSH
+●​ RESTful API endpoints for events, reservations, and user management
+●​ CORS-enabled for cross-platform compatibility
+
+Post-SLUSH Migration Plan:
+●​ Firebase Firestore will replace MySQL database
+●​ Firebase Authentication will replace mock authentication
+●​ Firebase Cloud Functions will handle automated processes
+●​ Seamless migration path already architected
+The applications communicate through this shared backend, enabling real-time data
+synchronization – for example, when an organizer publishes a new offer or a customer
+makes a reservation. All content management and event creation is handled exclusively
+through the Yazzo Partner app. A separate browser-based admin interface is not built for the
+MVP phase.
+The application suite enables:
+●​
+●​
+●​
+●​
+
+Creation and publishing of events and offers
+Real-time visibility on the map
+Updating details (e.g., discount changes, extending validity)
+Automatic expiration of offers once outdated​
+
+The system is designed to be scalable and rapidly developable at MVP level, and easy to
+demo.
+
+5. Authentication Methods
+Yazzo supports multiple secure authentication options to accommodate different user preferences:
+
+Google Sign-In (OAuth):
+●​ One-click authentication using existing Google accounts
+●​ No password management required from users
+●​ Secure token-based authentication handled by Firebase
+●​ Automatic profile information retrieval (name, email)
+
+Email/Password Registration (MVP Phase):
+●​ Mock email and password registration for demo purposes
+●​ Local authentication with AsyncStorage for MVP
+●​ Simplified registration flow for rapid development
+●​ Future: Firebase Authentication with secure password handling post-SLUSH
+
+Both authentication methods provide:
+●​ Secure user session management
+●​ Automatic token refresh
+●​ Consistent user experience across the app
+●​ Data protection and privacy compliance
+
+5. User Flows
+User Flow (Customer) – Yazzo App
+1.​ User Registration and Authentication
+○​ User chooses authentication method:
+  - Google Sign-In: One-click login with existing Google account
+  - Email/Password: Create new account with email verification
+○​ Email verification (for email/password users) before full access
+○​ Profile setup with basic information (name, preferences)
+1.​ App onboarding and personalization (optional)
+○​ The user can select interests, such as concerts, museums, or restaurants.
+○​ They can mark favorite providers and enable notifications from selected
+ones.
+○​ If no choices are made, the app uses location and browsing history for
+personalization.​
+2.​ Opening the app
+○​ The user opens the Yazzo app.
+○​ A real-time map displays local events and offers.
+○​ Content is shown based on location, behavior, and user settings.​
+3.​ Browsing offers on the map
+○​ The user browses current offers and events directly on the map.
+○​ Clicking on map markers reveals more information.​
+4.​ Opening an offer or event
+○​ Display includes:
+■​ What’s being offered
+■​ Size of discount
+■​ Remaining available reservations
+■​ Offer/event validity period​
+5.​ Making a reservation
+○​ The user clicks the “Reserve” button.
+○​ A small commission is charged.
+○​ The user receives a reservation code or QR code in the app and/or via email.​
+6.​ Using the offer
+○​ The user arrives on-site and shows the reservation or QR code.
+○​ The business marks the reservation as used.​
+7.​ (Future) Feedback
+○​ In future development, users can give feedback on their experience.​
+
+User Flow (Service Provider) – Yazzo Partner App
+1.​ Registration and profile creation
+○​ Service provider chooses authentication method:
+  - Google Sign-In: Quick registration with existing Google account
+  - Email/Password: Create business account with email verification
+○​ Email verification required before account activation
+○​ Fills in business info: company name, description, address, categories, contact details
+○​ In the MVP phase, business registration may be manually approved.​
+2.​ Creating an offer or event
+○​ Add the following details:
+■​ What is being offered
+■​ Discount percentage
+■​ Date/time
+■​ Validity duration
+■​ Max number of reservations​
+3.​ Preview and publishing
+○​ See a preview of what the offer looks like to users.
+○​ Publish the offer in real-time.​
+4.​ Editing the offer (MVP)
+○​ Can edit a published offer:
+■​ Validity period
+■​ Number of reservations
+■​ Discount
+■​ Title or description
+○​ Updates are immediately reflected to users.​
+5.​ Tracking reservations
+○​ View made reservations and remaining slots.
+○​ Can pause the offer’s visibility if needed.​
+6.​ Confirming reservations on-site
+○​ The customer shows the reservation or QR code.
+○​ The business marks the reservation as used (manually or via QR scan using
+Yazzo Partner app).​
+7.​ (Future) Analytics and feedback
+○​ In future development, the Partner app will include stats on occupancy,
+reservations, and user feedback per event. This helps organizers optimize
+pricing and timing.​
+
+6. Yazzo – MVP Development Timeline​
+Goal: MVP ready by November 5, 2025, two weeks before SLUSH. Development starts
+part-time in July 2025.
+July 2025 – Core Functions and Setup
+●​ Week 27: Project structure, authentication implementation:
+  - Google Sign-In integration via @react-native-google-signin
+  - Mock email/password authentication for MVP
+  - Railway deployment setup and configuration
+  - MySQL database schema and API endpoints
+●​ Week 28: MySQL database structure and comprehensive mock data system
+●​ Week 29: Mapbox view and dummy events on map
+●​ Weeks 30–31: CRUD operations for events (create, read, update, delete)
+August 2025 – Reservations & Automation
+●​ Week 32: Reservation logic – limited spots or time-based
+●​ Week 33: User reservations and mockup of payments
+●​ Week 34: Auto-expiry of offers (Cloud Function)
+●​ Week 35: Producer’s view of their events
+September 2025 – Notifications, UI, Content
+●​ Week 36: Notifications or messages about reservations (email/mockup)
+●​ Week 37: UI polishing and mobile responsiveness
+●​ Week 38: Test and demo content prep
+●​ Week 39: Testing with small user group
+October 2025 – Feedback and Finalization
+●​ Week 40: Bug fixes and handling test feedback
+●​ Week 41: Final polish – error fixing and UX refinement
+●​ Week 42: Pitch and demo video production
+●​ Weeks 43–44: Preparing investor materials (presentation)
+November 2025 – SLUSH Preparation & Deployment
+●​ Week 45: Railway deployment finalization and live demo preparation
+●​ Week 46 (Nov 3–5): MVP ready to showcase at SLUSH with live Railway deployment
+
+Post-SLUSH Development (December 2025 onwards):
+●​ Firebase Migration Phase:
+  - Replace MySQL with Firebase Firestore
+  - Implement Firebase Authentication for email/password
+  - Migrate to Firebase Cloud Functions for automation
+  - Enhanced security and scalability features
+●​ Production Optimization:
+  - Performance improvements
+  - Advanced analytics and reporting
+  - Enhanced user management features
+  - Scalability improvements for larger user base
+
+7. Yazzo in a Nutshell​
+Yazzo is an ambitious but realistic project that addresses a real need in the cultural and
+event sector – and soon also in the restaurant and experience economy. The clearly phased
+MVP plan enables fast progress and real user value testing before wider launch.
+The service leverages existing technologies effectively, focuses on core functionality, and
+genuinely introduces a new way to connect supply and demand in real time. With Yazzo,
+empty seats turn into opportunities – and even small players get visibility when it matters
+most.
+Through collaboration, agile development, and listening to user needs, Yazzo takes its first
+steps toward a new, vibrant urban culture.
+
+
