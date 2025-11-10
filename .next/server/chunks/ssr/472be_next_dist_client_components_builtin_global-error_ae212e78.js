@@ -1,0 +1,3 @@
+module.exports=[67353,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(57297);a.n(d("[project]/Documents/Yazzo/yazzo-homepage/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},46285,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(57297);a.n(d("[project]/Documents/Yazzo/yazzo-homepage/node_modules/next/dist/client/components/builtin/global-error.js"))},48185,a=>{"use strict";a.i(67353);var b=a.i(46285);a.n(b)}];
+
+//# sourceMappingURL=472be_next_dist_client_components_builtin_global-error_ae212e78.js.map
