@@ -38,16 +38,16 @@ export default function HeroSlideshow() {
   return (
     <section className="relative isolate overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 pt-28 pb-24 lg:py-40">
-        <div className="relative">
+        <div className="relative h-auto">
           {slides.map((s, i) => (
             <div
               key={i}
-              className={`transform-gpu transition-all duration-1000 ease-out ${
-                i === index ? "opacity-100 scale-100 z-10" : "opacity-0 scale-95 -z-10 absolute inset-0"
-              }`} 
+              className={`absolute inset-0 transition-opacity duration-1000 ease-out ${
+                i === index ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+              }`}
               aria-hidden={i !== index}
             >
-              <div className="grid gap-8 lg:grid-cols-2 items-center">
+              <div className="grid gap-8 lg:grid-cols-2 items-center h-full">
                 <div>
                   <h2 className="text-4xl font-bold text-text-primary dark:text-text-inverse">{s.title}</h2>
                   <p className="mt-4 text-lg text-text-secondary dark:text-gray-300 max-w-xl">{s.text}</p>

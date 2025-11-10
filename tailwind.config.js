@@ -21,7 +21,7 @@ module.exports = {
           900: '#701a75',
         },
         background: {
-          primary: '#B0C4DB',
+          primary: '#0f0f10',
           secondary: '#d1d5db',
           sidebar: '#1f2937',
           card: '#ffffff',
