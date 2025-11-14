@@ -21,7 +21,7 @@ export default function Investors() {
         <div className="relative bg-black/20 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-8">
           <div className="relative w-full aspect-[16/9] bg-white rounded-lg overflow-hidden mb-6">
             <iframe
-              src="/Yazzo_pitch_deck.pdf?v=2"
+              src="/YAZZO_pitch_deck.pdf?v=2"
               className="w-full h-full"
               title="Pitch Deck"
             />
