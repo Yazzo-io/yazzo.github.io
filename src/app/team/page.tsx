@@ -35,8 +35,7 @@ export default function Team() {
             <h3 className="text-2xl font-bold text-white mb-2">Timo Saari</h3>
             <p className="text-yazzo-400 font-semibold mb-4">Founder & CEO</p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Timo is a software developer currently studying at Hive Helsinki coding school. Before pivoting to tech, he built a career as a choreographer and producer in dance and physical theatre across Finland and internationally. This unique blend of creative and technical expertise drives Yazzo's vision to make culture more accessible and sustainable.
-            </p>
+              Timo is a software developer with strong AI expertise. Former choreographer in Finland’s major theatres and co-founder of two cultural companies, combining creative leadership with technical execution. This unique blend of creative and technical expertise drives Yazzo's vision to make culture more accessible and sustainable.            </p>
             <Link
               href="https://www.linkedin.com/in/timo-saari-373559110/"
               target="_blank"
